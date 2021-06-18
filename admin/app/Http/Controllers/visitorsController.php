@@ -10,6 +10,7 @@ class visitorsController extends Controller
         
 
         //$visitorsData = json_decode(visitorsModel::all());
+        
         $visitorsData = json_decode(visitorsModel::orderBy('id', 'desc')->take(50)->get());
 
 

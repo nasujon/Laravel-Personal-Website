@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\visitorModel;
+use App\Models\servicesModel;
 class homeController extends Controller
 {
     function homeIndex(){
@@ -16,6 +17,13 @@ class homeController extends Controller
             "visit_time"=> $time_date
         ]);
 
-        return view('home');
+
+
+        $servicesData = json_decode(servicesModel::all());
+
+
+        return view('home', [
+            'servicesData'=> $servicesData
+        ]);
     }
 }

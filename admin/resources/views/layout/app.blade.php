@@ -23,7 +23,7 @@
 </head>
 <body class="fix-header fix-sidebar">
 
-  @extends('layout.menu')
+  @include('layout.menu')
 
   @yield('content')
 

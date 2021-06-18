@@ -21,7 +21,7 @@
 <body>
 
 
-@extends('layout.menu')
+@include('layout.menu')
 
 
 @yield('content')

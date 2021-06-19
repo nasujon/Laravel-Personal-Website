@@ -45,5 +45,6 @@
   <script type="text/javascript" src="{{asset('assets/js/custom.js')}}"></script>
   <script type="text/javascript" src="{{asset('assets/js/axios.min.js')}}"></script>
     
+  @yield('script')
 </body>
 </html>

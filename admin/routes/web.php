@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\visitorsController;
+use App\Http\Controllers\servicesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +17,5 @@ use App\Http\Controllers\visitorsController;
 
 Route::get('/', [homeController::class, 'HomeIndex'])->name('home');
 Route::get('/visitors', [visitorsController::class, 'visitorsIndex'])->name('visitors');
+Route::get('/services', [servicesController::class, 'servicesIndex'])->name('services');
+Route::get('/getServicesData', [servicesController::class, 'getServicesData']);

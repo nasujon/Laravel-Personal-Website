@@ -19,3 +19,4 @@ Route::get('/', [homeController::class, 'HomeIndex'])->name('home');
 Route::get('/visitors', [visitorsController::class, 'visitorsIndex'])->name('visitors');
 Route::get('/services', [servicesController::class, 'servicesIndex'])->name('services');
 Route::get('/getServicesData', [servicesController::class, 'getServicesData']);
+Route::post('/serviceDelete', [servicesController::class, 'serviceDelete']);

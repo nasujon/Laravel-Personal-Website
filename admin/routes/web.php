@@ -20,3 +20,4 @@ Route::get('/visitors', [visitorsController::class, 'visitorsIndex'])->name('vis
 Route::get('/services', [servicesController::class, 'servicesIndex'])->name('services');
 Route::get('/getServicesData', [servicesController::class, 'getServicesData']);
 Route::post('/serviceDelete', [servicesController::class, 'serviceDelete']);
+Route::post('/serviceDetails', [servicesController::class, 'getServiceDetails']);

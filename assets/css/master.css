@@ -282,7 +282,7 @@ button.form-submit-btn {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   color: #ffffff;
-  padding: 17px 20px;
+  padding: 17px 30px;
   border-radius: 30px;
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -532,6 +532,7 @@ li.dropdown_menu ul li a {
   border-radius: 5px;
   -webkit-transition: all .3s;
   transition: all .3s;
+  font-weight: 300;
 }
 
 .submenu ul li a.current, .submenu ul li a.active {
@@ -540,6 +541,7 @@ li.dropdown_menu ul li a {
   color: #fff !important;
   -webkit-transition: all .3s;
   transition: all .3s;
+  font-weight: 400;
 }
 
 .submenu {
@@ -990,6 +992,7 @@ HEADER AREA CSS
   font-size: 18px;
   line-height: 18px;
   margin-bottom: 5px;
+  font-weight: 400;
 }
 
 .menu-item:before {
@@ -1004,7 +1007,7 @@ HEADER AREA CSS
 }
 
 .menu-item strong {
-  font-weight: 500;
+  font-weight: 400;
   position: relative;
   z-index: 2;
 }
@@ -1027,7 +1030,7 @@ HEADER AREA CSS
 }
 
 .discovertext p {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: #ffffff;
@@ -1327,17 +1330,32 @@ INVESTMENT AREA CSS
 
 .single-invest img {
   max-width: 140px;
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.single-invest a.btn1.btn-type2 {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
 }
 
 .single-invest {
-  background: #F6F6F6;
   border-radius: 20px;
-  padding: 35px;
+  padding: 25px;
+  position: relative;
+  z-index: 2;
   margin-bottom: 30px;
   -webkit-transition: all .3s;
   transition: all .3s;
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 360px;
 }
 
 .single-invest:hover {
@@ -1385,11 +1403,13 @@ SUBSCRIBE AREA CSS
   margin-bottom: 0;
   display: none;
   cursor: pointer;
+  font-weight: 300;
 }
 
 .checkform .form-group label {
   position: relative;
   cursor: pointer;
+  font-weight: 300;
 }
 
 .checkform .form-group label:before {
@@ -1432,12 +1452,14 @@ SUBSCRIBE AREA CSS
 .subscribe-heading h2 {
   font-size: 40px;
   line-height: 46px;
+  font-weight: 400;
   color: #FFFFFF;
 }
 
 .subscribe-form label {
   font-size: 20px;
   line-height: 20px;
+  font-weight: 400;
   color: #FFFFFF;
 }
 
@@ -1453,26 +1475,35 @@ input#email {
           box-sizing: border-box;
   border-radius: 10px;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
+  font-weight: 300;
   margin-bottom: 30px;
+}
+
+.checkform h3 {
+  font-weight: 400;
 }
 
 input#email::-webkit-input-placeholder {
   color: #FFFFFF;
+  font-weight: 300;
 }
 
 input#email:-ms-input-placeholder {
   color: #FFFFFF;
+  font-weight: 300;
 }
 
 input#email::-ms-input-placeholder {
   color: #FFFFFF;
+  font-weight: 300;
 }
 
 input#email::placeholder {
   color: #FFFFFF;
+  font-weight: 300;
 }
 
 input#email:focus {
@@ -1485,12 +1516,17 @@ button.subscribe-btn {
   border: 1px solid transparent;
   padding: 18px 30px;
   display: inline-block;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   line-height: 20px;
   color: #1751DB;
   -webkit-transition: all .3s;
   transition: all .3s;
+}
+
+.title.invest-option-heading h3,
+.title.invest-option-heading h2 {
+  font-weight: 300;
 }
 
 button.subscribe-btn i {
@@ -1566,6 +1602,7 @@ CONTACT AREA CSS
   font-size: 40px;
   line-height: 48px;
   color: #FFFFFF;
+  font-weight: 400;
 }
 
 .contacts p {
@@ -1573,11 +1610,12 @@ CONTACT AREA CSS
   line-height: 16px;
   color: #FFFFFF;
   mix-blend-mode: normal;
+  font-weight: 300;
   opacity: 0.9;
 }
 
 .contacts a {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   color: #FFFFFF;
@@ -1598,7 +1636,7 @@ CONTENT AREA CSS
 ================
 */
 .content-box h2 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 40px;
   line-height: 52px;
   color: #101010;
@@ -1608,6 +1646,7 @@ CONTENT AREA CSS
   font-size: 24px;
   line-height: 32px;
   color: #555555;
+  font-weight: 300;
 }
 
 /*
@@ -1616,7 +1655,7 @@ IMAGES AREA CSS
 ================
 */
 .image-content h2 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 60px;
   line-height: 65px;
   color: #101010;
@@ -1823,7 +1862,7 @@ VIDEO AREA CSS
 .video-wrap {
   position: relative;
   z-index: 2;
-  height: 650px;
+  height: 765px;
 }
 
 .video-bg {
@@ -1836,6 +1875,42 @@ VIDEO AREA CSS
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.video-bg.resi-video-bg {
+  background: url(../img/bg/resiVideoBg.jpg) no-repeat;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.video-bg.service-video-bg {
+  background: url(../img/bg/serviceVideoBg.jpg) no-repeat;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.video-bg.proptech-video-bg {
+  background: url(../img/bg/proptechVideoBg.jpg) no-repeat;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.video-bg.blueciel-video-bg {
+  background: url(../img/bg/bluecielVideoBg.jpg) no-repeat;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.video-bg.flex-video-bg {
+  background: url(../img/bg/flexVideoBg.jpg) no-repeat;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.video-bg.home-video-bg {
+  background: url(../img/bg/homeVideoBg.jpg) no-repeat;
+  background-position: center !important;
+  background-size: cover !important;
 }
 
 .video-bg.wp-block-cover-image {
@@ -1896,6 +1971,7 @@ BUSSINESS MODEL AREA CSS
   line-height: 80px;
   color: #1751DB;
   margin-bottom: 0;
+  font-weight: 400;
 }
 
 .single-business-model {
@@ -1906,12 +1982,14 @@ BUSSINESS MODEL AREA CSS
   font-size: 32px;
   line-height: 40px;
   color: #101010;
+  font-weight: 400;
   margin-bottom: 0;
 }
 
 .business-content p {
   font-size: 20px;
   line-height: 32px;
+  font-weight: 300;
   margin-bottom: 0;
 }
 
@@ -1955,7 +2033,7 @@ BRAND AREA CSS
 }
 
 .brand-title h2 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 60px;
   line-height: 65px;
   color: #101010;
@@ -2251,6 +2329,7 @@ INNER CSS
   line-height: 65px;
   color: #101010;
   margin-bottom: 0;
+  font-weight: 400;
 }
 
 .inner-content p {
@@ -2422,7 +2501,7 @@ div#team {
 .delivar-text p {
   position: relative;
   z-index: 2;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 1px;
@@ -2498,7 +2577,7 @@ STORY PAGE CSS
 }
 
 .single-story p {
-  font-size: 22px;
+  font-size: 21px;
   line-height: 30px;
   color: #101010;
   margin-top: 15px;
@@ -2611,7 +2690,7 @@ BRAND PAGE CSS
 }
 
 .community-point p {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 18px;
   line-height: 30px;
   color: #161D31;
@@ -2636,14 +2715,14 @@ BRAND PAGE CSS
 }
 
 .single-brand-about p {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 16px;
   line-height: 28px;
   color: #454545;
 }
 
 .single-brand-about h5 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 18px;
   color: #0C0C0C;
@@ -2660,6 +2739,7 @@ BRAND PAGE CSS
   font-size: 60px;
   line-height: 65px;
   color: #101010;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 767px) {
@@ -2690,7 +2770,7 @@ BLUEHOME PAGE CSS
 }
 
 .single-feature-project a {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 22px;
   line-height: 22px;
   color: #0C0C0C;
@@ -2728,7 +2808,7 @@ p.location {
 }
 
 p.location span {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-align: right;
@@ -2800,7 +2880,7 @@ SERVICE PAGE CSS
 ================
 */
 .cfaqs button.btn.btn-link {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 22px;
   line-height: 22px;
   color: #000;
@@ -2939,7 +3019,7 @@ LABS PAGE CSS
 }
 
 .single-partner h1 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 32px;
   line-height: 50px;
   color: #FFFFFF;
@@ -2948,17 +3028,15 @@ LABS PAGE CSS
 }
 
 a.partner-tag {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
   color: #FFFFFF;
   opacity: 0.7;
 }
 
 a.partner-btn {
-  font-weight: bold;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: #FFFFFF;
@@ -3104,6 +3182,7 @@ a.join-btn {
           align-items: center;
   position: relative;
   z-index: 2;
+  font-weight: 400;
 }
 
 a.join-btn:after {
@@ -3154,6 +3233,7 @@ a.cmail {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 400;
 }
 
 a.cmail img {
@@ -3248,6 +3328,7 @@ COMMONS CSS
   color: #454545;
   max-width: 80%;
   margin: 30px 0;
+  font-weight: 300;
 }
 
 .title h1 {
@@ -3284,17 +3365,18 @@ COMMONS CSS
   font-size: 60px;
   line-height: 65px;
   color: #101010;
+  font-weight: 400;
 }
 
 .title h3 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 60px;
   line-height: 65px;
   color: #101010;
 }
 
 .title h4 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 40px;
   line-height: 52px;
   color: #0C0C0C;
@@ -3308,7 +3390,7 @@ COMMONS CSS
 }
 
 .title h6 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 22px;
   line-height: 20px;
   color: #0C0C0C;
@@ -3317,8 +3399,8 @@ COMMONS CSS
 }
 
 .title small {
-  font-weight: normal;
-  font-size: 22px;
+  font-weight: 300;
+  font-size: 18px;
   line-height: 22px;
   color: #454545;
   margin-bottom: 30px;
@@ -3339,6 +3421,10 @@ COMMONS CSS
   background-size: contain;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.font-light {
+  font-weight: 300 !important;
 }
 
 .no-margin {
@@ -3381,6 +3467,7 @@ COMMONS CSS
   .business-title h3 {
     font-size: 24px;
     line-height: 30px;
+    font-weight: 400;
   }
   .model-number h2 {
     font-size: 60px;
@@ -3389,6 +3476,7 @@ COMMONS CSS
   .business-content p {
     font-size: 16px;
     line-height: 24px;
+    font-weight: 300;
   }
   .brand-title h2 {
     font-size: 50px;
@@ -3686,7 +3774,7 @@ NICE SELECT CSS
 }
 
 .checkBox-group .form-header h2 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 40px;
   line-height: 50px;
   color: #101010;
@@ -3698,6 +3786,7 @@ NICE SELECT CSS
   line-height: 30px;
   color: #010101;
   margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .checkBox-group .checkform .form-group label:before {
@@ -3732,6 +3821,10 @@ NICE SELECT CSS
     max-height: 500px;
     overflow-y: scroll;
   }
+}
+
+.form-header h2 {
+  margin-bottom: 20px;
 }
 
 .wp-block-cover-image {
